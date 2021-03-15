@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff44f"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/margin_15x"
+            android:text="Hevolve"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageIV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_55x"
+        app:layout_constraintTop_toBottomOf="@+id/titleTV"
+        android:src="@drawable/onboard_revision" />
+
+    <LinearLayout
+        android:id="@+id/text_linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_65x"
+        android:layout_marginStart="@dimen/margin_15x"
+        android:layout_marginEnd="@dimen/margin_15x"
+        app:layout_constraintTop_toBottomOf="@+id/imageIV"
+        app:layout_constraintBottom_toTopOf="@+id/getStartedBtn"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:paddingTop="@dimen/margin_15x"
+        android:fontFamily="sans-serif-light"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.01"
+        android:text="Take Your"
+        android:textColor="#000000"
+        android:textSize="41sp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="@dimen/margin_15x"
+        android:text="Revision"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_15x"
+        android:layout_marginEnd="@dimen/margin_25x"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        android:fontFamily="@font/robot_regular"
+        android:text="Nothing is ever so good that it can’t stand a little revision, And nothing is ever so impossible and broken down that a try at fixing it is out of the question."
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getStartedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:background="@drawable/get_started_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="GET STARTED" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

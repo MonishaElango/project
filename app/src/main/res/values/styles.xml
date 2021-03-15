@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+    <style name="ExoMediaButton.Previous">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ExoMediaButton.Next">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="PlaceTextView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="AppThemeDashboard" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+    <style name="TextView.Primary" parent="TextView.Base">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="TextView.Black.Subtitle1.MontserrateRegular" parent="TextView.Black">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+    <style name="TextView.Black.Body2.MontserrateRegular" parent="TextView.Black">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+    <style name="TextView.Black.Body2.MontserrateLight" parent="TextView.Black">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="android:fontFamily">@font/montserrat_light</item>
+    </style>
+    <style name="TextView.White.Headline6.AgletSlab" parent="TextView.White">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline6</item>
+        <item name="android:fontFamily">@font/aglet_slab_bold</item>
+    </style>
+    <style name="TextView.Primary.Caption.MontserratRegular" parent="TextView.Primary">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+
+    </style>
+    <style name="TextView.White.Subtitle1.MontserratRegular" parent="TextView.White">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+    <style name="TextView.White.Headline5.AgletSlab" parent="TextView.White">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5</item>
+        <item name="android:fontFamily">@font/aglet_slab_bold</item>
+    </style>
+    <style name="TextView.Black.Body1.MontserrateRegular" parent="TextView.Black">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+    <style name="TextView.Black" parent="TextView.Base">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextView.White" parent="TextView.Base">
+        <item name="android:textColor">@color/onPrimary</item>
+    </style>
+    <style name="TextView.Base" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

@@ -1,0 +1,236 @@
+# compiler: R8
+# compiler_version: 2.0.88
+# pg_map_id: c1bc041
+# common_typos_disable
+com.cuberto.liquid_swipe.BuildConfig -> com.cuberto.liquid_swipe.BuildConfig:
+    1:1:void <init>():6:6 -> <init>
+com.cuberto.liquid_swipe.EdgeController -> com.cuberto.liquid_swipe.EdgeController:
+    1:42:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):12:53 -> <init>
+    43:48:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):50:55 -> <init>
+    49:49:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI,int,kotlin.jvm.internal.DefaultConstructorMarker):15:15 -> <init>
+    1:8:android.animation.ValueAnimator animate(float,float,long):98:105 -> animate
+    1:1:android.animation.ValueAnimator animate$default(com.cuberto.liquid_swipe.EdgeController,float,float,long,int,java.lang.Object):96:96 -> animate$default
+    2:2:android.animation.ValueAnimator animate$default(com.cuberto.liquid_swipe.EdgeController,float,float,long,int,java.lang.Object):0:0 -> animate$default
+    1:60:void animateLeft(float,boolean):135:194 -> animateLeft
+    61:61:void animateLeft(float,boolean):151:151 -> animateLeft
+    1:71:void animateRight(float,boolean,long):111:181 -> animateRight
+    72:74:void animateRight(float,boolean,long):128:130 -> animateRight
+    1:1:void animateRight$default(com.cuberto.liquid_swipe.EdgeController,float,boolean,long,int,java.lang.Object):109:109 -> animateRight$default
+    2:2:void animateRight$default(com.cuberto.liquid_swipe.EdgeController,float,boolean,long,int,java.lang.Object):0:0 -> animateRight$default
+    1:90:void animateY(float,long):79:168 -> animateY
+    91:91:void animateY(float,long):90:90 -> animateY
+    1:1:void animateY$default(com.cuberto.liquid_swipe.EdgeController,float,long,int,java.lang.Object):78:78 -> animateY$default
+    2:2:void animateY$default(com.cuberto.liquid_swipe.EdgeController,float,long,int,java.lang.Object):0:0 -> animateY$default
+    1:1:void setAnimatingY(boolean):36:36 -> getAnimatingY
+    1:1:boolean getAnimatingY():36 -> getAnimatingY
+    1:1:void setBitmap(android.graphics.Bitmap):34:34 -> getBitmap
+    1:1:android.graphics.Bitmap getBitmap():34 -> getBitmap
+    1:1:void setCurrentItem(int):30:30 -> getCurrentItem
+    1:1:int getCurrentItem():30 -> getCurrentItem
+    1:1:void setCurrentX(float):38:38 -> getCurrentX
+    1:1:float getCurrentX():38 -> getCurrentX
+    1:1:void setCurrentY(float):37:37 -> getCurrentY
+    1:1:float getCurrentY():37 -> getCurrentY
+    1:1:void setDensity(float):16:16 -> getDensity
+    1:1:float getDensity():16 -> getDensity
+    1:1:void setEnabled(boolean):31:31 -> getEnabled
+    1:1:boolean getEnabled():31 -> getEnabled
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):27:27 -> getErasorPaint
+    1:1:android.graphics.Paint getErasorPaint():27 -> getErasorPaint
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI,int,kotlin.jvm.internal.DefaultConstructorMarker):14:14 -> getHeight
+    1:1:int getHeight():14 -> getHeight
+    1:1:void setHelper(com.cuberto.liquid_swipe.animation.AnimationHelper):23:23 -> getHelper
+    1:1:com.cuberto.liquid_swipe.animation.AnimationHelper getHelper():23 -> getHelper
+    1:1:void setProgress(float):25:25 -> getProgress
+    1:1:float getProgress():25 -> getProgress
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):20:20 -> getSWITCH_ANIMATION_DURATION
+    1:1:long getSWITCH_ANIMATION_DURATION():20 -> getSWITCH_ANIMATION_DURATION
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):32:32 -> getShouldDraw
+    1:1:boolean getShouldDraw():32 -> getShouldDraw
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):28:28 -> getSourceOutPaint
+    1:1:android.graphics.Paint getSourceOutPaint():28 -> getSourceOutPaint
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):42:42 -> getSwipeDirection
+    1:1:int getSwipeDirection():42 -> getSwipeDirection
+    1:1:void setSwitchingPage(boolean):33:33 -> getSwitchingPage
+    1:1:boolean getSwitchingPage():33 -> getSwitchingPage
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):26:26 -> getTranslateMatrix
+    1:1:android.graphics.Matrix getTranslateMatrix():26 -> getTranslateMatrix
+    1:1:com.cuberto.liquid_swipe.ViewI getView():17:17 -> getView
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI,int,kotlin.jvm.internal.DefaultConstructorMarker):15:15 -> getWaveCenterY
+    1:1:float getWaveCenterY():15 -> getWaveCenterY
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI,int,kotlin.jvm.internal.DefaultConstructorMarker):13:13 -> getWidth
+    1:1:int getWidth():13 -> getWidth
+    1:1:void setYAnimator(android.animation.ValueAnimator):40:40 -> getYAnimator
+    1:1:android.animation.ValueAnimator getYAnimator():40 -> getYAnimator
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):21:21 -> getY_RATIO
+    1:1:float getY_RATIO():21 -> getY_RATIO
+    1:1:boolean hasBitmap():59:59 -> hasBitmap
+    1:3:void onPageChanged(int):63:65 -> onPageChanged
+    1:1:void setAnimatingY(boolean):36:36 -> setAnimatingY
+    1:1:void setBitmap(android.graphics.Bitmap):34:34 -> setBitmap
+    1:1:void setCurrentItem(int):30:30 -> setCurrentItem
+    1:1:void setCurrentX(float):38:38 -> setCurrentX
+    1:1:void setCurrentY(float):37:37 -> setCurrentY
+    1:1:void setDensity(float):16:16 -> setDensity
+    1:1:void setEnabled(boolean):31:31 -> setEnabled
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI,int,kotlin.jvm.internal.DefaultConstructorMarker):14:14 -> setHeight
+    1:1:void setHeight(int):14 -> setHeight
+    1:1:void setHelper(com.cuberto.liquid_swipe.animation.AnimationHelper):23:23 -> setHelper
+    1:1:void setProgress(float):25:25 -> setProgress
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):32:32 -> setShouldDraw
+    1:1:void setShouldDraw(boolean):32 -> setShouldDraw
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):42:42 -> setSwipeDirection
+    1:1:void setSwipeDirection(int):42 -> setSwipeDirection
+    1:1:void setSwitchingPage(boolean):33:33 -> setSwitchingPage
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):26:26 -> setTranslateMatrix
+    1:1:void setTranslateMatrix(android.graphics.Matrix):26 -> setTranslateMatrix
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI,int,kotlin.jvm.internal.DefaultConstructorMarker):15:15 -> setWaveCenterY
+    1:1:void setWaveCenterY(float):15 -> setWaveCenterY
+    1:1:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI,int,kotlin.jvm.internal.DefaultConstructorMarker):13:13 -> setWidth
+    1:1:void setWidth(int):13 -> setWidth
+    1:1:void setYAnimator(android.animation.ValueAnimator):40:40 -> setYAnimator
+com.cuberto.liquid_swipe.EdgeController$animate$1 -> com.cuberto.liquid_swipe.EdgeController$animate$1:
+    1:3:void onAnimationUpdate(android.animation.ValueAnimator):101:103 -> onAnimationUpdate
+    4:4:void onAnimationUpdate(android.animation.ValueAnimator):101:101 -> onAnimationUpdate
+com.cuberto.liquid_swipe.EdgeController$animateLeft$$inlined$doOnEnd$1 -> com.cuberto.liquid_swipe.EdgeController$animateLeft$$inlined$doOnEnd$1:
+    1:1:void <init>(com.cuberto.liquid_swipe.EdgeController,boolean):88:88 -> <init>
+    1:8:void onAnimationEnd(android.animation.Animator):117:124 -> onAnimationEnd
+com.cuberto.liquid_swipe.EdgeController$animateRight$$inlined$doOnEnd$1 -> com.cuberto.liquid_swipe.EdgeController$animateRight$$inlined$doOnEnd$1:
+    1:1:void <init>(com.cuberto.liquid_swipe.EdgeController,boolean):88:88 -> <init>
+    1:8:void onAnimationEnd(android.animation.Animator):117:124 -> onAnimationEnd
+com.cuberto.liquid_swipe.EdgeController$animateY$$inlined$doOnEnd$1 -> com.cuberto.liquid_swipe.EdgeController$animateY$$inlined$doOnEnd$1:
+    1:1:void <init>(com.cuberto.liquid_swipe.EdgeController):88:88 -> <init>
+    1:1:void com.cuberto.liquid_swipe.EdgeController.animateY(float,long):89:89 -> onAnimationEnd
+    1:1:void onAnimationEnd(android.animation.Animator):117 -> onAnimationEnd
+com.cuberto.liquid_swipe.EdgeController$animateY$1 -> com.cuberto.liquid_swipe.EdgeController$animateY$1:
+    1:4:void onAnimationUpdate(android.animation.ValueAnimator):84:87 -> onAnimationUpdate
+    5:5:void onAnimationUpdate(android.animation.ValueAnimator):84:84 -> onAnimationUpdate
+com.cuberto.liquid_swipe.LiquidPager -> com.cuberto.liquid_swipe.LiquidPager:
+    1:15:void <init>(android.content.Context):22:36 -> <init>
+    16:29:void <init>(android.content.Context,android.util.AttributeSet):23:36 -> <init>
+    30:31:void <init>(android.content.Context,android.util.AttributeSet):24:25 -> <init>
+    1:1:com.cuberto.liquid_swipe.animation.LeftEdgeController access$getLeftEdgeController$p(com.cuberto.liquid_swipe.LiquidPager):20:20 -> access$getLeftEdgeController$p
+    1:1:com.cuberto.liquid_swipe.animation.RightEdgeController access$getRightEdgeController$p(com.cuberto.liquid_swipe.LiquidPager):20:20 -> access$getRightEdgeController$p
+    1:1:void access$setLeftEdgeController$p(com.cuberto.liquid_swipe.LiquidPager,com.cuberto.liquid_swipe.animation.LeftEdgeController):20:20 -> access$setLeftEdgeController$p
+    1:1:void access$setRightEdgeController$p(com.cuberto.liquid_swipe.LiquidPager,com.cuberto.liquid_swipe.animation.RightEdgeController):20:20 -> access$setRightEdgeController$p
+    1:1:void blockInput(boolean):86:86 -> blockInput
+    1:3:void dispatchDraw(android.graphics.Canvas):131:133 -> dispatchDraw
+    1:4:android.graphics.Bitmap getBitmap(int):66:69 -> getBitmap
+    1:1:android.graphics.Bitmap getBitmapAt(int):74:74 -> getBitmapAt
+    1:1:int getCount():62:62 -> getCount
+    1:5:void onDraw():137:141 -> onDraw
+    1:3:void onDrawForeground(android.graphics.Canvas):125:127 -> onDrawForeground
+    1:6:void onSizeChanged(int,int,int,int):93:98 -> onSizeChanged
+    1:15:boolean onTouchEvent(android.view.MotionEvent):102:116 -> onTouchEvent
+    16:17:boolean onTouchEvent(android.view.MotionEvent):110:111 -> onTouchEvent
+    18:19:boolean onTouchEvent(android.view.MotionEvent):105:106 -> onTouchEvent
+    1:1:void redraw():78:78 -> redraw
+    1:2:void setAdapter(androidx.viewpager.widget.PagerAdapter):150:151 -> setAdapter
+    1:2:void setButtonDrawable(int):55:56 -> setButtonDrawable
+    1:1:void setOffscreenPageLimit(int):146:146 -> setOffscreenPageLimit
+    1:1:void switchPage(int):82:82 -> switchPage
+com.cuberto.liquid_swipe.LiquidPager$1 -> com.cuberto.liquid_swipe.LiquidPager$1:
+    1:1:void <init>(com.cuberto.liquid_swipe.LiquidPager):36:36 -> <init>
+    1:3:void onPageSelected(int):40:42 -> onPageSelected
+com.cuberto.liquid_swipe.animation.AnimationHelper -> com.cuberto.liquid_swipe.animation.AnimationHelper:
+    1:8:void <init>(float,float,float):7:14 -> <init>
+    1:1:float getDensity():7:7 -> getDensity
+    1:1:float getViewHeight():7:7 -> getViewHeight
+    1:1:float getViewWidth():7:7 -> getViewWidth
+    1:1:void setDensity(float):7:7 -> setDensity
+    1:1:void setViewHeight(float):7:7 -> setViewHeight
+    1:1:void setViewWidth(float):7:7 -> setViewWidth
+    1:6:float sideWidth(float):89:94 -> sideWidth
+    1:19:float waveHorRadius(float):30:48 -> waveHorRadius
+    1:19:float waveHorRadiusBack(float):53:71 -> waveHorRadiusBack
+    1:6:float waveVertRadius(float):77:82 -> waveVertRadius
+com.cuberto.liquid_swipe.animation.Direction -> com.cuberto.liquid_swipe.animation.Direction:
+    1:4:void <clinit>():3:6 -> <clinit>
+    1:1:void <init>():3:3 -> <init>
+    1:1:int getLEFT():5:5 -> getLEFT
+    1:1:int getNONE():4:4 -> getNONE
+    1:1:int getRIGHT():6:6 -> getRIGHT
+com.cuberto.liquid_swipe.animation.LeftEdgeController -> com.cuberto.liquid_swipe.animation.LeftEdgeController:
+    1:15:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):19:33 -> <init>
+    1:6:void drawEdge(android.graphics.Canvas):94:99 -> drawEdge
+    1:6:void drawPath(android.graphics.Canvas):110:115 -> drawPath
+    7:17:void drawPath(android.graphics.Canvas):110:120 -> drawPath
+    1:11:boolean onDownTouch(android.view.MotionEvent):50:60 -> onDownTouch
+    1:7:boolean onMoveTouch(android.view.MotionEvent):79:85 -> onMoveTouch
+    1:11:void onPageChanged(int):36:46 -> onPageChanged
+    1:7:boolean onUpTouch(android.view.MotionEvent):66:72 -> onUpTouch
+    1:3:void updateProgress(float):104:106 -> updateProgress
+com.cuberto.liquid_swipe.animation.RightEdgeController -> com.cuberto.liquid_swipe.animation.RightEdgeController:
+    1:27:void <init>(int,int,float,float,com.cuberto.liquid_swipe.ViewI):24:50 -> <init>
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$getAnimatingScale$p
+    1:1:boolean access$getAnimatingScale$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17 -> access$getAnimatingScale$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$getButtonAlpha$p
+    1:1:float access$getButtonAlpha$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17 -> access$getButtonAlpha$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$getScaleMatrix$p
+    1:1:android.graphics.Matrix access$getScaleMatrix$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17 -> access$getScaleMatrix$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$getShouldDraw$p
+    1:1:boolean access$getShouldDraw$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17 -> access$getShouldDraw$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$getView$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$getWidth$p
+    1:1:int access$getWidth$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17 -> access$getWidth$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$setAnimatingScale$p
+    1:1:void access$setAnimatingScale$p(com.cuberto.liquid_swipe.animation.RightEdgeController,boolean):17 -> access$setAnimatingScale$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$setButtonAlpha$p
+    1:1:void access$setButtonAlpha$p(com.cuberto.liquid_swipe.animation.RightEdgeController,float):17 -> access$setButtonAlpha$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$setShouldDraw$p
+    1:1:void access$setShouldDraw$p(com.cuberto.liquid_swipe.animation.RightEdgeController,boolean):17 -> access$setShouldDraw$p
+    1:1:com.cuberto.liquid_swipe.ViewI access$getView$p(com.cuberto.liquid_swipe.animation.RightEdgeController):17:17 -> access$setWidth$p
+    1:1:void access$setWidth$p(com.cuberto.liquid_swipe.animation.RightEdgeController,int):17 -> access$setWidth$p
+    1:58:void animateScale(float,float,long):226:283 -> animateScale
+    59:60:void animateScale(float,float,long):242:243 -> animateScale
+    1:1:void animateScale$default(com.cuberto.liquid_swipe.animation.RightEdgeController,float,float,long,int,java.lang.Object):225:225 -> animateScale$default
+    1:10:void drawButton(android.graphics.Canvas):197:206 -> drawButton
+    1:6:void drawEdge(android.graphics.Canvas):168:173 -> drawEdge
+    1:6:void drawPath(android.graphics.Canvas):179:184 -> drawPath
+    7:21:void drawPath(android.graphics.Canvas):179:193 -> drawPath
+    1:1:boolean isAButtonPress(android.view.MotionEvent):218:218 -> isAButtonPress
+    1:28:boolean onDownTouch(android.view.MotionEvent):73:100 -> onDownTouch
+    1:9:boolean onMoveTouch(android.view.MotionEvent):145:153 -> onMoveTouch
+    1:12:void onPageChanged(int):58:69 -> onPageChanged
+    1:1:void onPageSwitchedLeft():222:222 -> onPageSwitchedLeft
+    1:152:boolean onUpTouch(android.view.MotionEvent):106:257 -> onUpTouch
+    153:289:boolean onUpTouch(android.view.MotionEvent):134:270 -> onUpTouch
+    1:1:void setButtonDrawable(android.graphics.drawable.Drawable):54:54 -> setButtonDrawable
+    1:4:void updateButtonBounds():211:214 -> updateButtonBounds
+    1:3:void updateProgress(float):162:164 -> updateProgress
+com.cuberto.liquid_swipe.animation.RightEdgeController$animateScale$$inlined$doOnEnd$1 -> com.cuberto.liquid_swipe.animation.RightEdgeController$animateScale$$inlined$doOnEnd$1:
+    1:1:void <init>(com.cuberto.liquid_swipe.animation.RightEdgeController,float):88:88 -> <init>
+    1:5:void onAnimationEnd(android.animation.Animator):117:121 -> onAnimationEnd
+com.cuberto.liquid_swipe.animation.RightEdgeController$animateScale$1 -> com.cuberto.liquid_swipe.animation.RightEdgeController$animateScale$1:
+    1:5:void onAnimationUpdate(android.animation.ValueAnimator):229:233 -> onAnimationUpdate
+    6:6:void onAnimationUpdate(android.animation.ValueAnimator):230:230 -> onAnimationUpdate
+com.cuberto.liquid_swipe.animation.RightEdgeController$onUpTouch$$inlined$doOnEnd$1 -> com.cuberto.liquid_swipe.animation.RightEdgeController$onUpTouch$$inlined$doOnEnd$1:
+    1:1:void <init>(com.cuberto.liquid_swipe.animation.RightEdgeController):88:88 -> <init>
+    1:1:void onAnimationEnd(android.animation.Animator):117:117 -> onAnimationEnd
+com.cuberto.liquid_swipe.animation.RightEdgeController$onUpTouch$$inlined$doOnEnd$2 -> com.cuberto.liquid_swipe.animation.RightEdgeController$onUpTouch$$inlined$doOnEnd$2:
+    1:1:void <init>(com.cuberto.liquid_swipe.animation.RightEdgeController):88:88 -> <init>
+    1:1:void onAnimationEnd(android.animation.Animator):117:117 -> onAnimationEnd
+com.cuberto.liquid_swipe.animation.WaveLayer -> com.cuberto.liquid_swipe.animation.WaveLayer:
+    1:8:void <init>(float,float,float,float,int):6:13 -> <init>
+    1:1:android.graphics.Path getPath():13:13 -> getPath
+    1:1:float getSideWidth():10:10 -> getSideWidth
+    1:1:int getSwipeDirection():11:11 -> getSwipeDirection
+    1:1:float getWaveCenterY():7:7 -> getWaveCenterY
+    1:1:float getWaveHorRadius():8:8 -> getWaveHorRadius
+    1:1:float getWaveVertRadius():9:9 -> getWaveVertRadius
+    1:1:void setPath(android.graphics.Path):13:13 -> setPath
+    1:1:void setSideWidth(float):10:10 -> setSideWidth
+    1:1:void setWaveCenterY(float):7:7 -> setWaveCenterY
+    1:1:void setWaveHorRadius(float):8:8 -> setWaveHorRadius
+    1:1:void setWaveVertRadius(float):9:9 -> setWaveVertRadius
+    1:19:void updatePath(float,float):16:34 -> updatePath
+    20:30:void updatePath(float,float):31:41 -> updatePath
+    31:41:void updatePath(float,float):39:49 -> updatePath
+    42:52:void updatePath(float,float):47:57 -> updatePath
+    53:63:void updatePath(float,float):55:65 -> updatePath
+    64:74:void updatePath(float,float):63:73 -> updatePath
+    75:85:void updatePath(float,float):71:81 -> updatePath
+    86:96:void updatePath(float,float):79:89 -> updatePath
+    97:107:void updatePath(float,float):87:97 -> updatePath
+    108:118:void updatePath(float,float):95:105 -> updatePath
+    119:130:void updatePath(float,float):103:114 -> updatePath

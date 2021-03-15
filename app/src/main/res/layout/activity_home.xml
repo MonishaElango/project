@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/google_pixel"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:id="@+id/headerCV">
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_view"
+        android:layout_width="@dimen/width_200x"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_45x"
+         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/teacher_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:show_timeout="0"
+        app:hide_on_touch="false"
+        app:use_controller="false"
+        app:resize_mode="fill"
+        />
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="@dimen/margin_20x"
+        android:src="@drawable/ic_baseline_info_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/video_view" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="INFO"
+        android:textSize="30px"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/imgInfo"
+        app:layout_constraintEnd_toEndOf="@+id/imgInfo"
+        app:layout_constraintTop_toBottomOf="@id/imgInfo" />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_volume_mute_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_20x"
+        app:layout_constraintTop_toBottomOf="@id/video_view" />
+
+    <Button
+        android:id="@+id/teacher_tv"
+        android:layout_width="@dimen/width_150x"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20x"
+        android:layout_marginTop="@dimen/margin_20x"
+        android:layout_marginLeft="@dimen/margin_20x"
+        android:layout_marginEnd="@dimen/margin_20x"
+        android:layout_marginRight="@dimen/margin_20x"
+        android:background="@drawable/shape_corner_curved_filled_primary_color_30"
+        android:text="Teacher"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/video_view" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="hello-world.json"
+        app:lottie_loop="false" />
+
+
+    <Button
+        android:id="@+id/select_tv"
+        android:layout_width="@dimen/width_150x"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="@dimen/margin_20x"
+        android:layout_marginEnd="@dimen/margin_20x"
+        android:background="@drawable/shape_corner_curved_filled_primary_color_30"
+        android:text="SELECT"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teacher_tv" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_card_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+      />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/nav_item"
+        android:background="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconSize="@dimen/height_30x"
+        app:itemIconTint="@drawable/selector"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

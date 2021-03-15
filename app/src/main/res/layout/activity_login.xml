@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_15x"
+    android:background="@drawable/bg_login"
+    tools:context=".views.LoginActivity"
+
+    >
+
+
+    <TextView
+        android:id="@+id/login_header_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/sign_in_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextView.White.Headline5.AgletSlab"/>
+
+
+    <TextView
+        android:id="@+id/login_sub_header_tv"
+        app:layout_constraintTop_toBottomOf="@id/login_header_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pause_cen_go"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/padding_4x"
+        style="@style/TextView.White.Subtitle1.MontserratRegular"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sign_in_cv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/login_sub_header_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/margin_10x"
+        app:cardElevation="7dp"
+        app:cardMaxElevation="7dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_tv"
+        >
+        <ScrollView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/padding_15x">
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_12x">
+
+                <ImageView
+                    android:id="@+id/iv_anim"
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingTop="30dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="100dp"
+                    android:src="@drawable/robot"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name_tl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_55x"
+                    app:layout_constraintTop_toBottomOf="@id/iv_anim"
+                    android:layout_marginTop="@dimen/margin_65x"
+                    app:hintTextColor="@color/black"
+                    android:paddingTop="@dimen/padding_5x"
+                    android:paddingBottom="@dimen/padding_15x"
+                    style="@style/TextView.Black.Body1.MontserrateRegular"
+                    android:background="@drawable/shape_corner_curved_light_grey">
+
+                    <EditText
+                        android:id="@+id/name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_15x"
+                        android:drawableStart="@drawable/ic_male"
+                        android:paddingStart="@dimen/padding_15x"
+                        android:paddingEnd="@dimen/padding_12x"
+                        android:hint="Name"
+                        android:background="@null"
+                        style="@style/TextView.Black.Subtitle1.MontserrateRegular"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_tl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_55x"
+                    app:layout_constraintTop_toBottomOf="@id/name_tl"
+                    android:layout_marginTop="@dimen/margin_20x"
+                    app:hintTextColor="@color/black"
+                    android:paddingTop="@dimen/padding_5x"
+                    android:paddingBottom="@dimen/padding_15x"
+                    style="@style/TextView.Black.Body1.MontserrateRegular"
+                    android:background="@drawable/shape_corner_curved_light_grey">
+
+                    <EditText
+                        android:id="@+id/email_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:drawablePadding="@dimen/padding_15x"
+                        android:drawableStart="@drawable/ic_email"
+                        android:paddingStart="@dimen/padding_15x"
+                        android:paddingEnd="@dimen/padding_12x"
+                        android:hint="@string/email"
+                        android:background="@null"
+                        style="@style/TextView.Black.Subtitle1.MontserrateRegular"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phone_login_tl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_55x"
+                    app:layout_constraintTop_toBottomOf="@id/email_tl"
+                    android:layout_marginTop="@dimen/margin_20x"
+                    app:hintTextColor="@color/black"
+                    android:paddingTop="@dimen/padding_5x"
+                    android:paddingBottom="@dimen/padding_15x"
+                    style="@style/TextView.Black.Body1.MontserrateRegular"
+                    android:background="@drawable/shape_corner_curved_light_grey">
+
+                    <EditText
+                        android:id="@+id/phone_login_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_15x"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:paddingStart="@dimen/padding_15x"
+                        android:paddingEnd="@dimen/padding_12x"
+                        android:hint="Phone Number"
+                        android:background="@null"
+                        style="@style/TextView.Black.Subtitle1.MontserrateRegular"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/phone_login_tl"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/margin_55x"
+                    android:textAllCaps="false"
+                    android:paddingTop="@dimen/padding_12x"
+                    android:paddingBottom="@dimen/padding_12x"
+                    android:text="@string/sign_in"
+                    android:background="@drawable/login_bg"
+                    android:textColor="@drawable/selector_textcolor_white_to_black"
+                    style="@style/TextView.White.Headline6.AgletSlab"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/sign_up_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColorLink="@color/primary"
+        style="@style/TextView.Black.Body2.MontserrateRegular"
+        android:gravity="center"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

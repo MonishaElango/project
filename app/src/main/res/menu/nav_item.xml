@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/account_circle"
+        android:title="Account"
+        app:cnb_textColor="#ffffff" />
+
+    <item
+        android:id="@+id/people"
+        android:icon="@drawable/icon_people"
+        android:title="People"
+        app:cnb_textColor="#ffffff" />
+
+    <item
+        android:id="@+id/book"
+        android:icon="@drawable/reading_book"
+        android:title="Book"
+        app:cnb_textColor="#ffffff" />
+
+    <item
+        android:id="@+id/teacher"
+        android:icon="@drawable/teacher_blackboard"
+        android:title="Teacher"
+        app:cnb_textColor="#ffffff" />
+
+</menu>

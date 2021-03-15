@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Hevolve</string>
+
+    <string name="base_url">https://mailer.hertzai.com/</string>
+    <string name="base_url_flow">https://assess.mcgroce.com/</string>
+
+
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="email_address">E-mail Address</string>
+    <string name="email">E-mail</string>
+
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or">or</string>
+    <string name="login_sub_header">Login to your account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t you have an account? Sign up now!</string>
+    <string name="fb_login">LOGIN WITH FACEBOOK</string>
+    <string name="connect_fb_login">Connect with facebook</string>
+    <string name="invalid_email">Please enter a valid email address</string>
+
+    <string name="pause_cen_go">Hevolve</string>
+
+    <!-- MainActivity -->
+    <string name="invalid_password">"Password must be at least 8 characters long></string>
+    <string name="create_new_account">Create new account</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="create_password">Create Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="open_drawer">OPEN</string>
+
+    <string name="close_drawer">CLOSE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="reg">Register Here</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_in_small">Sign in</string>
+    <string name="remember_me">Remember me</string>
+    <string name="client_name">Client Name</string>
+    <string name="Client_name">Client Name</string>
+
+    <string name="media_url_dash">
+        https://multiplatform-f.akamaihd.net/i/multi/will/bunny/big_buck_bunny_,640x360_400,640x360_700,640x360_1000,950x540_1500,.f4v.csmil/master.m3u8
+</string>
+</resources>
