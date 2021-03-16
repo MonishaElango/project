@@ -53,7 +53,7 @@ public class HeaderStoriesAdapter extends RecyclerView.Adapter<HeaderStoriesAdap
 
     @Override
     public int getItemCount() {
-        return headerList.size();
+        return 0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
