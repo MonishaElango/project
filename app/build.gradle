@@ -16,10 +16,10 @@ ext {
 android {
     signingConfigs {
         release {
-            keyAlias 'key1'
-            keyPassword '506066'
-            storeFile file('C:\\Users\\Vinoth Monisha\\Desktop\\Hevolve.jks')
-            storePassword '506066'
+//            keyAlias 'key1'
+//            keyPassword '506066'
+//            storeFile file('C:\\Users\\Vinoth Monisha\\Desktop\\Hevolve.jks')
+//            storePassword '506066'
         }
     }
 
