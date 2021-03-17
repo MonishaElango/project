@@ -54,24 +54,10 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ViewHold
             }
         });
 
-
-        if(mList.get(position)!=null) {
-            holder.mHeaderRV.setVisibility(View.VISIBLE);
-            mHeaderList = new ArrayList<>();
-            mHeaderList.add(new HeaderViewModelStories(R.drawable.chemistry_bg, "", "Did You Know"));
-            holder.mHeaderAdapter = new HeaderStoriesAdapter(context, mHeaderList);
-
-            LinearLayoutManager layoutManager = new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false);
-            holder.mHeaderRV.setLayoutManager(layoutManager);
-            holder.mHeaderRV.setAdapter(holder.mHeaderAdapter);
-
-        }
-
     }
 
     public interface StoriesInterface{
         void storiesItemCLicked(int position);
-
     }
 
     @Override
@@ -82,13 +68,11 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
         ImageView imageView;
-        RecyclerView mHeaderRV;
-        HeaderStoriesAdapter mHeaderAdapter;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.tv_name);
             imageView = itemView.findViewById(R.id.img_item);
-            mHeaderRV = itemView.findViewById(R.id.storiesRV);
 
 
         }

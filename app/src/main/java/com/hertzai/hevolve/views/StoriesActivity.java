@@ -1,6 +1,8 @@
 package com.hertzai.hevolve.views;
 
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +25,10 @@ public class StoriesActivity extends AppCompatActivity {
     @BindView(R.id.imageVideoRecyclerview)
     RecyclerView mStoriesRV;
     RecyclerView mHeaderRV;
+    @BindView(R.id.image_bytes)
+    ImageView contentIV;
+    @BindView(R.id.text_bytes_3)
+    TextView contentTV;
 
     private StoriesAdapter mStoriesAdapter;
     private HeaderStoriesAdapter mHeaderAdapter;
@@ -37,7 +43,6 @@ public class StoriesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_stories);
         ButterKnife.bind(this);
         mStoriesRV = findViewById(R.id.imageVideoRecyclerview);
-        mHeaderRV = findViewById(R.id.storiesRV);
         setUpStories();
         //setUpHeader();
 
@@ -62,54 +67,12 @@ public class StoriesActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(StoriesActivity.this, LinearLayoutManager.VERTICAL, false);
         mStoriesRV.setLayoutManager(layoutManager);
         mStoriesRV.setItemAnimator(new DefaultItemAnimator());
-           mStoriesAdapter =new StoriesAdapter(this, storyList, new StoriesAdapter.StoriesInterface() {
+        mStoriesAdapter =new StoriesAdapter(this, storyList, position -> {
+            StoriesItemModel item = storyList.get(position);
+            contentIV.setImageResource(item.getTeachers());
+            contentTV.setText(item.getBytes());
 
-            @Override
-            public void storiesItemCLicked(int position) {
-
-
-
-                       switch (position) {
-                           case 0: {
-
-                               headerList.add(new HeaderViewModelStories(R.drawable.santa_bg, "", "Did You Know"));
-                               break;
-                           }
-                           case 1: {
-                               headerList.add(new HeaderViewModelStories(R.drawable.newton_bg, "", "Did You Know"));
-                               break;
-                           }
-                           case 2: {
-
-                               headerList.add(new HeaderViewModelStories(R.drawable.panda_bg, "", "Did You Know"));
-                               break;
-                           }
-                           case 3: {
-
-                               headerList.add(new HeaderViewModelStories(R.drawable.abdul_kalam_bg, "", "Did You Know"));
-                               break;
-                           }
-                           case 4: {
-
-                               headerList.add(new HeaderViewModelStories(R.drawable.chemistry_bg, "", "Did You Know"));
-                               break;
-                           }
-                           case 5: {
-
-                               headerList.add(new HeaderViewModelStories(R.drawable.marie_curie_bg, "", "Did You Know"));
-                               break;
-                           }
-                           case 6: {
-
-                               headerList.add(new HeaderViewModelStories(R.drawable.shiva_bg, "", "Did You Know"));
-                               break;
-                           }
-                           default:
-                               headerList.add(new HeaderViewModelStories(R.drawable.shiva_bg, "", "Did You Know"));
-
-                       }
-            }
-           });
+        });
 
            mStoriesRV.setAdapter(mStoriesAdapter);
            mStoriesAdapter.notifyDataSetChanged();
